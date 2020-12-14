@@ -41,9 +41,11 @@ TODO: Target metric, results, conclusions/considerations for best model
 
 TODO: 3 Visuals nexplaining model
 
-<img alt="ROC/AUC" src="/images/ROC.png" width="400"/>
+<img alt="confusion" src="/images/class_report.png" width="600"/>
 
-<img alt="confusion" src="/images/confusion.png" width="600"/>
+<img alt="confusion" src="/images/confusion.png" width="400"/>
+
+<img alt="ROC/AUC" src="/images/ROC.png" width="400"/>
 
 ### Reccomendations
 
