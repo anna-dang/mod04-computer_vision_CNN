@@ -8,19 +8,15 @@ December 15th, 2020
 
 # *Computer Vision*
 
-*X-Ray Image Classification of Pediatric Pneumonia*
+*X-Ray Image Classification*
 
-<img alt="xrays" src="/images/xrays.jpg" width="800"/>
+ <img alt="xrays" src="/images/laser_eyes.gif" width="400"/>
 
 ---
 
 ### Overview
 
 Objective: Build a model that can classify whether a given patient has pneumonia, given a chest x-ray image.
-
-"Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients’ routine clinical care.
-
-For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert."
 
 Repository Contents:
     - images : images for display through this analysis
@@ -30,6 +26,12 @@ Repository Contents:
 
 
 ### Data
+
+ <img alt="xrays" src="/images/xrays.jpg" width="800"/>
+ 
+"Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients’ routine clinical care.
+
+For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert."
 
 Sources: [original image source](https://data.mendeley.com/datasets/rscbjbr9sj/2), [data download source/Kaggle competition](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
