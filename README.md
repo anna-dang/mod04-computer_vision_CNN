@@ -19,6 +19,7 @@ December 15th, 2020
 Objective: Build a model that can classify whether a given patient has pneumonia, given a chest x-ray image.
 
 Repository Contents:
+
     - images : images for display through this analysis
     - project_4_notebook.ipynb : Google Colab notebook containing full analysis/modeling
     - README.md : project summary and contents
@@ -27,7 +28,7 @@ Repository Contents:
 
 ### Data
 
- <img alt="xrays" src="/images/xrays.jpg" width="800"/>
+ <img alt="xrays" src="/images/xrays.png" width="800"/>
  
 "Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients’ routine clinical care.
 
