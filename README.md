@@ -32,7 +32,9 @@ Repository Contents:
  
 "Chest X-ray images (anterior-posterior) were provided from pediatric patients of Guangzhou Women and Children’s Medical Center, Guangzhou, China. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system."
 
-Sources: [original image source](https://data.mendeley.com/datasets/rscbjbr9sj/2), [data download source/Kaggle competition](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
+In the above images, some opacity can be observed in the bottom row of pneumonia lungs. This is due to the X-ray picking up the fluid filled air sacs due to the infection. 
+
+Sources: [original study source](https://data.mendeley.com/datasets/rscbjbr9sj/2), [data download source/Kaggle competition](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
 ### Classifier
 
@@ -42,11 +44,14 @@ For this project I wanted to optimize the model to arrive at as few fasle predic
 
 The final model was trained on images with the following preprocessing:
  
-    - Images resized to 124 x 124 pixels with 3 RGB color channels
-    - Pixel value standardized to 0 - 1 scale
-    - To prepare the model to discern noise, four data augmentations were used: rotation, shifting, and zoom
+    - Images were resized to 124 x 124 pixels, with 3 RGB color channels
+    - Pixel values were normalized to a 0-1 scale
+    - To prepare the model to discern noise, four data augmentations were used: rotation, vertical/horizontal shifting, and zoom
+    - The imbalanced data set (75% pnemonia vs. 25% normal X-rays) was corrected by applying class weights
     
 The final model arcitecture was a convolutional neural network (CNN) with ************** layers.
+
+<img alt="confusion" src="/images/confusion.png" width="400"/>
     
 Resulting in performances scores of:
 
@@ -69,7 +74,7 @@ Resulting in performances scores of:
 
 #### Future Work
 
-    - Collect more images or continue data augmentation to increase training set from ~5,000 images.
+    - This is a supervised learning task and thus performance is based on the quality of the dataset used. Collect more labeled images or continue data augmentation to increase the quantity of images in the training set.
     - Try transfer learning - use an established x-ray classifier and build model on top of that.
     - Progressively resize the model input image size to find the smallest possible input size without sacrificing performance.
 
