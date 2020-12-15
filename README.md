@@ -52,15 +52,15 @@ TODO: 3 Visuals nexplaining model
 
 ### Reccomendations
 
-    - 
-    - 
+    - Continue collecting labeled images to progressively train the model.
+    - Store image data at 128 x 128 to conserve storage memory (this is up to a 10% reduction in original image size).
     - 
 
 #### Future Work
 
-    - 
-    - 
-    - 
+    - Collect more images or continue data augmentation to increase training set from ~5,000 images.
+    - Try transfer learning - use an established x-ray classifier and build model on top of that.
+    - Progressively resize the model input image size to find the smallest possible input size without sacrificing performance.
 
 #### Thank you for viewing my project!
 
