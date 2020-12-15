@@ -16,7 +16,7 @@ December 15th, 2020
 
 ### Overview
 
-Objective: Build a model that can classify whether a given patient has pneumonia, given a chest x-ray image.
+Objective: Build a model that can classify whether a patient has pneumonia, given a chest x-ray image.
 
 Repository Contents:
 
