@@ -49,18 +49,18 @@ The final model was trained on images with the following preprocessing:
     - To prepare the model to discern noise, four data augmentations were used: rotation, vertical/horizontal shifting, and zoom
     - The imbalanced data set (75% pnemonia vs. 25% normal X-rays) was corrected by applying class weights
     
-The final model arcitecture was a convolutional neural network (CNN) with ************** layers.
+The final model arcitecture was a convolutional neural network (CNN) with 3 convolution blocks (convolution, drop out, pool).
 
-<img alt="confusion" src="/images/confusion.png" width="400"/>
+<img alt="confusion" src="/images/final_structure.png" width="400"/>
     
 Resulting in performances scores of:
 
-    - Accuracy:
-    - AUC:
-    - Precision:
-    - Recall:
+    - Accuracy - 89.77%
+    - Recall - 94 %
+    - Precision - 82 %
+    - AUC - 0.88
 
-<img alt="confusion" src="/images/class_report.png" width="600"/>
+<img alt="classification report" src="/images/class_report.png" width="600"/>
 
 <img alt="confusion" src="/images/confusion.png" width="400"/>
 
@@ -74,7 +74,9 @@ Resulting in performances scores of:
 
 #### Future Work
 
-    - This is a supervised learning task and thus performance is based on the quality of the dataset used. Collect more labeled images or continue data augmentation to increase the quantity of images in the training set.
+This is a supervised learning task and thus performance is based on the quality of the dataset used. 
+
+    - Collect more labeled images or continue data augmentation to increase the quantity of images in the training set.
     - Try transfer learning - use an established x-ray classifier and build model on top of that.
     - Progressively resize the model input image size to find the smallest possible input size without sacrificing performance.
 
