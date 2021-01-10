@@ -28,7 +28,7 @@ Repository Contents:
 
 ### Data
 
- <img alt="xrays" src="/images/xrays.png" width="800"/>
+ <img alt="xrays" src="/images/xrays_.png" width="800"/>
  
 "Chest X-ray images (anterior-posterior) were provided from pediatric patients of Guangzhou Women and Children’s Medical Center, Guangzhou, China. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system."
 
